@@ -1,0 +1,111 @@
+:root{
+    --white: #fff;
+    --med-gray: #555;
+    --dk-gray: #222;
+    --med-blue: #58B6C0;
+    --lt-blue: #b1d6e1;
+
+    --font-family: "Playfair Display", serif;
+
+}
+body{
+    font-family: var(--font-family);
+    color: var(--dk-gray);
+    font-style: normal;
+}
+header{
+    background-image: url(images/swiss-valley.jpg);
+    width: 1400px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+main, footer{
+    width: 1150px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+header, footer{
+    background-color: var(--lt-blue);
+    text-align: center;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    width: 300px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+nav a{
+    color: var(--med-gray);
+}
+nav a:hover{
+    color: var(--dk-gray);
+    font-weight: bold;
+}
+h2{
+    text-align: center;
+}
+#section1 p{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+#section2 p{
+    text-align: center;
+}
+#section2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    z-index: 2;
+    justify-content: space-evenly;
+}
+#section img{
+    display: flex;
+    height: 360px;
+    width: 590px;
+}
+footer{
+    padding: 4rem 1rem 1rem 2rem;
+    text-align: center;
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+#contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+#contact form{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
+    gap: 1rem;
+    justify-content: space-evenly;
+}
+#contact img{
+    grid-row: 3/9;
+}
+#contact h2{
+    grid-column: 1/-1;
+    text-align: left;
+}
+div{
+    border: 0.15em solid;
+    border-color: var(--med-blue);
+}
+form p{
+    font-weight: bold;
+}
+form{
+    grid-row: 2/9;
+}
+label{
+    font-weight: bold;
+}
+
